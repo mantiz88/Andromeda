@@ -1,0 +1,173 @@
+
+
+body{
+    font-family: Lato, "Open Sans", serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/*Header section*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: block;
+    margin-top: 43px;
+    margin-left: 57px;
+}
+.logo h1{
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #313131;
+}
+.logo h1 span{
+    font-weight: bold;
+}
+
+.logo p{
+    margin: 0;
+    margin-bottom: 43px;
+    margin-left: 88px;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #8f58ff;
+}
+
+nav{
+    margin: 0;
+    display: block;
+}
+nav ul{
+    margin: 0;
+    padding-top: 54px;
+}
+nav ul li{
+    align-items: center;
+    list-style: none;
+    display: inline-block;
+    margin-right:36px;
+}
+nav a{
+    font-size: 16px;
+    color: #313131;
+}
+
+/*************carousel section***********/
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #272727;
+}
+section #slides{
+    position: relative;
+    margin: 0;
+    width: 640px;
+    height: 670px;
+    padding: 0;
+    list-style: none;
+
+}
+.slide h1{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 28px;
+}
+.slide p{
+    padding: 0;
+    margin: 590px 557px 0px 36px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+}
+.slide h1{
+    padding: 0;
+    margin: 7px 0 32px 35px;
+}
+.slide{
+
+    box-shadow: 0 -200px 400px -150px #000000 inset;
+    font-family: Lato, "Open Sans", serif;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: 1s;
+}
+.show{
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide:nth-last-of-type(1){
+    background: url("https://c.s-microsoft.com/ru-ru/CMSImages/Hero_SMB_960x600.jpg?version=d2aeaada-9eb6-633e-cb9a-a8f03be89a88") no-repeat;
+    background-size: cover;
+}
+.slide:nth-last-of-type(2){
+    background: url("https://support.content.office.net/ru-ru/media/6d0369ad-c6e7-4901-ba26-62781f26801b.jpg")no-repeat;
+    background-size: cover;
+}
+.slide:nth-last-of-type(3){
+    background: darkgray;
+    background-size: cover;
+}
+
+.controls{
+    background: #313131;
+    border: none;
+    width: 51px;
+    height: 51px;
+}
+.carousel{
+    background: #191919;
+}
+
+/**************Features section**************/
+
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .holder{
+    margin-top: 136px;
+    margin-right: 43px;
+    margin-bottom: 93px;
+    width: 250px;
+    height: 220px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+}
+
+.features .holder img{
+    background: #ffffff;
+    border: 1px solid #e2e2e2;
+    margin-top: -36px;
+    margin-left: 88px;
+    margin-right: 88px;
+}
+
+.holder h5{
+
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.holder p{
+    font-size: 16px;
+}
